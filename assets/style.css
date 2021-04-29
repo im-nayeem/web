@@ -68,6 +68,7 @@ body
         width: 20%;
         background-color: rgb(98, 174, 204);
         float: left;
+        overflow: hidden;
     }
     .sidebar ul li{
         list-style: none;
@@ -89,25 +90,30 @@ body
         color: darkgreen;
         
     }
-    /*content*/
-    .content
+    /*body*/
+    .homepage
     {
         height: 100%;
         width: 80%;
         /* background-color: blue; */
         float: left;
     }
-    .content img{
+    .homepage img{
         height: 100%;
         width: 80%;
         display: block;
         margin: auto;
        
     }
+    .about
+    {
+        float: left;
+        width: 80%;
+    }
     .about img
     {
-        height: 100%;
-        width: 80%;
+        height: 500px;
+        width: 800px;
         display: block;
         margin: auto;
     }
@@ -117,6 +123,8 @@ body
     }
     .contact
     {
+        float: left;
+        width: 80%;
         padding-top: 10%;
     }
     .contact p{
