@@ -1,0 +1,30 @@
+div{
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    background-color: darkgrey;
+    float: left;
+}
+.green
+{
+    background-color: green;
+    overflow: hidden;
+
+}
+.blue
+{
+    background-color: blue;
+    float: right;
+  
+    overflow: scroll;
+}
+.black
+{
+    background-color: black;
+    float: right;
+}
+.yellow
+{
+    background-color: yellow;
+}
