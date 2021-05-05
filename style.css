@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(116, 161, 167);
+}
+div
+{
+    height: 200px;
+    width: 60%;
+    margin: 5px auto;
+    background-color:rgb(109, 148, 135);
+    border: 2px solid black;
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    background-color: #60c79e;
+    border: 2px solid blue;
+    padding: 5px;
+    font-family: 'Faster One';font-size: 22px;
+}
+a:hover
+{
+    background-color: cornflowerblue;
+}
