@@ -1,26 +1,37 @@
 body{
-    background-color: rgb(116, 161, 167);
+    height: 100vh;
+    background-image: linear-gradient(to    bottom right,rgb(207, 160, 72),rgb(156 192 207), rgb(61, 175, 118));
 }
 div
 {
-    height: 200px;
+    height: 30%;
     width: 60%;
     margin: 5px auto;
     background-color:rgb(109, 148, 135);
     border: 2px solid black;
     text-align: center;
+    padding-top: 70px; 
+    line-height: 2em;
+    font-family: 'Sofia';font-size: 18px;
 }
 a
 {
     text-decoration: none;
+    text-align: center;
     color: rgb(0, 0, 0);
     font-size: 40px;
-    background-color: #60c79e;
-    border: 2px solid blue;
+    background-color: #4b7c69;
+    border: 2px solid rgb(151, 151, 160);
     padding: 5px;
-    font-family: 'Faster One';font-size: 22px;
+    font-family: 'Sofia';font-size: 20px;
+
+    /* font-family: 'Faster One';font-size: 22px; */
 }
 a:hover
 {
     background-color: cornflowerblue;
+}
+*
+{
+    box-sizing: border-box;
 }

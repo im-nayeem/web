@@ -1,6 +1,6 @@
 body
 {
-    background-color:rgb(116, 161, 167);
+    background-image: linear-gradient(to    bottom right,rgb(207, 160, 72),rgb(156 192 207), rgb(61, 175, 118));
 }
 
 .header, .main, .footer
@@ -13,6 +13,7 @@ body
 {
     background-color: rgb(209 234 244);
     height: 100px;
+    overflow: hidden;
 }
     /* menu bar */
     .logo
@@ -59,8 +60,9 @@ body
 .main
 {
     height: 80vh;
-    background-color: rgb(156 192 207);
-    overflow: hidden;
+    background-image: linear-gradient(to    top left,rgb(207, 160, 72),rgb(156 192 207), rgb(61, 175, 118));
+    /* background-color: rgb(156 192 207); */
+    /* overflow: hidden; */
 }
     /* sidebar */
     .sidebar
@@ -94,15 +96,38 @@ body
     {
         height: 100%;
         width: 80%;
-        /* background-color: blue; */
         float: left;
     }
-    .homepage img{
-        height: 50%px;
-        width: 50%;
-        display: block;
-        margin: auto;
+    .homepage .gallery{
+        margin: 14px;
+        height: 150px;
+        width: 20%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
 
+    }
+    .homepage img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .homepage .gallery::after
+    {  
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgb(74, 92, 190);
+        opacity: 0.8;
+        transition: margin-top 1s,margin-left 1s;
+   
+
+    }
+    .homepage .gallery:hover::after
+    {
+       margin-top: 100%;
+       margin-left: 100%;
     }
     .about
     {
@@ -122,16 +147,54 @@ body
     }
     .contact
     {
-      float: left;
-      height: 100%;
-      width: 80%;
-      overflow: hidden;
+        float: left;
+        width: 80%;
+        height: 100%;
+    }
+   .contact .text
+   {
+    background-image: linear-gradient(to bottom right, rgb(184, 133, 57), rgb(152, 202, 95));
+       width: 90%;
+       height: 20%;
+       text-align: center;
+       padding: 30px;
+       border: 2px solid rgb(26, 25, 25);
+       border-radius:20px;
+        margin: 10px auto;
+        font-family: 'Akaya Telivigala';font-size: 22px;
+        text-shadow: 1px 1px rgb(248, 247, 247);
+   }
+   i{ /** icon **/
+        margin-right: 10px;
+    }
+    .contact .contactForm
+    {
 
+        background-image: linear-gradient(to bottom left,chocolate, rgb(61, 175, 118));
+        width: 90%;
+        height: 76%;
+        margin: auto;
+        border: 2px solid rgb(29, 28, 28);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input:focus,textarea:focus{
+        background-color: rgb(212, 205, 205);
+    }
+    td{
+        text-align: right;
+        vertical-align: top;
+        padding: 10px 20px;
+    }
+    .message
+    {
+        height: 100px;
     }
 
     .extra
     {
-        /* background-color: blue; */
         height: 100%;
         width: 80%;
         float: left;
@@ -145,8 +208,11 @@ body
 {
     height: 100px;
     background-color: rgb(209 234 244);
-}
-.footer p{
     text-align: center;
     line-height: 6em;
+}
+*
+{
+    box-sizing: border-box;
+
 }

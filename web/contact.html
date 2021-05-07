@@ -5,6 +5,8 @@
             Nayeem's Diary
         </title>
         <link href="assets/style.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/972c99837c.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- header part -->
@@ -29,32 +31,60 @@
                 <a href="others.html">Others</a>
             </div>
             <div class="contact">
-                <form class="" action="index.html" method="post">
-                  <table>
-                    <tr>
-                      <td>Name:</td>
-                      <td><input type="text"/></td>
-                    </tr>
-                    <tr>
-                      <td>E-mail:</td>
-                      <td><input type="email"/></td>
-                    </tr>
-                    <tr>
-                      <td>Age:</td>
-                      <td><input type="number"/></td>
-                    </tr>
-
-                    </table
-
+                <div class="text">
+                    <i class="far fa-envelope"></i>E-mail: nayeem.cse.cou@gmail.com
+                    <br>
+                    <i class="fas fa-phone"></i>Phone: 01521-726130
+                </div>
+                <div class="contactForm">
+                    <form action="" method="POST">
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><input type="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Age:</td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td>
+                                    <input type="radio" name="gender" value="Male">Male
+                                    <input type="radio" name="gender" value="Female">Female
+                                    <input type="radio" name="gender" value="Other">Other
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country:</td>
+                                <td>
+                                    <select name="country">
+                                        <option value="" disabled selected>Select your country</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="UK">UK</option>
+                                        <option value="USA">USA</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Your message:</td>
+                                <td><textarea class="message"></textarea></td>
+                            </tr>
+                        </table>
+                        <button type="submit">Send</button>
+                        </form>
                 </form>
+                </div>
             </div>
 
         </div>
         <!-- footer part -->
         <div class="footer">
-            <p>
                 Copyright &copy; 2021
-            </p>
 
         </div>
 
