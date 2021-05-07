@@ -61,8 +61,8 @@ body
 {
     height: 80vh;
     background-image: linear-gradient(to    top left,rgb(207, 160, 72),rgb(156 192 207), rgb(61, 175, 118));
-    /* background-color: rgb(156 192 207); */
-    /* overflow: hidden; */
+    background-color: rgb(156 192 207);
+    overflow: hidden;
 }
     /* sidebar */
     .sidebar
@@ -91,6 +91,8 @@ body
         color: darkgreen;
 
     }
+    
+    
     /*body*/
     .homepage
     {

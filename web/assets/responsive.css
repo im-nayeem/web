@@ -1,0 +1,118 @@
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: linear-gradient(to    bottom right,rgb(218, 212, 202),rgb(156 192 207), rgb(129, 19, 105));
+    }
+    /* header  */
+    .header, .main, .footer
+    {
+     width: 100%;
+     margin-top:10px;
+    }
+
+
+    .logo img
+    {
+        
+        margin: 5px  0;
+    }
+    .menu
+    {
+        float: right;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .menu ul
+    {
+        padding: 0px;
+        margin: 20px 0px;
+        margin-right: 5px;
+    }
+    .menu ul li:not(:last-child)
+    {
+        margin-right: 20px;
+    }
+    .menu ul li a
+    {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(64, 121, 93);
+        border-style: solid;
+        border-color: rgb(68, 68, 64);
+        border-width: 2px;
+        padding: 5px;
+    }
+    .about
+    {
+        float: left;
+        width: 80%;
+    }
+    .about img
+    {
+        height: 300px;
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+ 
+    .contact .text
+    {
+        width: 96%;
+        padding: 0;
+        padding-top: 20px;
+        font-size: 18px;
+        word-wrap: break-word;
+         
+    }
+    i{ /** icon **/
+         margin-right: 5px;
+     }
+     .contact .contactForm
+     {
+ 
+         background-image: linear-gradient(to bottom left,chocolate, rgb(61, 175, 118));
+         width: 96%;
+         height: 76%;
+         margin: auto;
+         border: 2px solid rgb(29, 28, 28);
+         border-radius: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     input:focus,textarea:focus{
+         background-color: rgb(212, 205, 205);
+     }
+     td{
+         text-align: right;
+         vertical-align: top;
+         padding: 5px 0;
+         margin:5px 0;
+     }
+     .message
+     {
+         height: 50px;
+     }
+}
+@media only screen and (max-width: 500px)
+{
+    .logo img
+    {
+        height: 50px;
+        width: 120px;
+        margin: 15px 0;
+    }
+    .menu ul li:not(:last-child)
+    {
+        margin-right: 1px;
+    }
+    .menu ul li a
+    {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(64, 121, 93);
+        border-style: solid;
+        border-color: rgb(68, 68, 64);
+        border-width: 2px;
+        padding: 1px;
+    }
+} 
