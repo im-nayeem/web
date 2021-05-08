@@ -6,53 +6,83 @@
     .header, .main, .footer
     {
      width: 95%;
-     margin-top:10px;
+     margin:5px auto;
+     border-radius: 5px;
     }
-
-
+    .header
+    {
+        height: 70px;
+        
+    }
+    .footer
+    {
+        height: 70px;
+        line-height: 4em;
+    }
     .logo img
     {
-        
-        margin:5px;
+        height: 60px;
+        width: 150px;
+        margin: 5px;
     }
     .menu
     {
-        float: right;
-        margin-right: 0px;
-        margin-left: 0px;
+        display: none;
     }
-    .menu ul
+    .select
     {
-        padding: 0px;
-        margin: 20px 0px;
-        margin-right: 5px;
-    }
-    .menu ul li:not(:last-child)
-    {
-        margin-right: 10px;
-    }
-    .menu ul li a
-    {
-        text-decoration: none;
-        font-size: 20px;
-        color: rgb(64, 121, 93);
-        border-style: solid;
-        border-color: rgb(68, 68, 64);
-        border-width: 2px;
-        padding: 5px;
-    }
-    .sidebar a
-    {
-        text-decoration: none;
-        text-align: center;
-        font-size: 15px;
-        margin-top: 10px;
-        color: rgb(36, 34, 34);
-        background-color: rgb(109, 148, 135);
-        padding: 3px;
         display: block;
-        border: 2px solid black;
     }
+    .sidebar
+    {
+        overflow: visible;
+    }
+    .sidebar .large
+    {
+       display: none;
+    }
+    
+    .dropbtn {  
+        background-color: rgb(109, 148, 135); 
+        color: black;  
+        padding: 10px;  
+        font-size: 12px; 
+        font-size: 20px;
+        width: 100%;
+        margin: 10px auto;
+        border: 1px solid black;
+    
+         
+    }  
+    .dropdown {  
+        display: block;  
+        
+    }  
+    .dropdown-content {  
+        list-style: none;
+        position: absolute;  
+        background-color: lightgrey;  
+        min-width: 200px;  
+        display: none;  
+        z-index: 1;  
+        font-size: 20px;
+    }  
+    .dropdown-content a {  
+        border: 1px solid black;
+        color: black;  
+        padding: 12px 16px;  
+        text-decoration: none;  
+        display: block;  
+    }  
+    .dropdown-content a:hover {  
+        background-color: rgb(70, 187, 158);  
+    }  
+    .dropdown:hover .dropdown-content {  
+        display: block;  
+    }  
+    .dropdown:hover .dropbtn {  
+        background-color: grey;  
+    } 
     .about
     {
         float: left;

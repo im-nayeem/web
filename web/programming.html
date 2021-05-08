@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/style.css" rel="stylesheet">
         <link href="assets/responsive.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/972c99837c.js" crossorigin="anonymous"></script>
+    
     </head>
     <body>
         <!-- header part -->
@@ -25,13 +27,31 @@
                 </ul>
                 
             </div>
+            <div class="select">
+                <select onchange="location = this.value;">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="index.html">Home</option>
+                    <option value="about.html">About</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+            </div>
         </div>
         <!-- main part -->
         <div class="main">
             <div class="sidebar">
-                <a href="programming.html">Programming</a>
-                <a href="thoughts.html">Thoughts</a>
-                <a href="others.html">Others</a>
+                <div class="large">
+                    <a href="programming.html">Programming</a>
+                    <a href="thoughts.html">Thoughts</a>
+                    <a href="others.html">Others</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-list"></i></button>
+                    <div class="dropdown-content">
+                        <li><a href="programming.html">Programming</a></li>
+                        <li><a href="thoughts.html">Thoughts</a></li>
+                        <li><a href="others.html">Others</a></li>
+                    </div>
+                </div>
             </div>
             <div class="extra">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
